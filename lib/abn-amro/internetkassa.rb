@@ -24,9 +24,9 @@ module AbnAmro
     
     MANDATORY_VALUES = %w{ merchant_id order_id amount currency language }
     DEFAULT_VALUES   = { :currency => 'EUR', :language => 'nl_NL' }
-    PRODUCTION_URL   = "https://internetkassa.abnamro.nl/ncol/prod/orderstandard.asp"
-    TEST_URL         = "https://internetkassa.abnamro.nl/ncol/test/orderstandard.asp"
-    
+    PRODUCTION_URL   = "https://internetkassa.abnamro.nl/ncol/prod/orderstandard_utf8.asp"
+    TEST_URL         = "https://internetkassa.abnamro.nl/ncol/test/orderstandard_utf8.asp"
+
     attr_reader :params
     
     attr_accessor :order_id, :amount, :description, :currency, :language
